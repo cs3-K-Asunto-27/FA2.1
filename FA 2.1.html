@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FA 2.1</title>
+  <meta name="description" content="11/17/2023">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Asunto">
+  <style>
+    /* Styling for link states */
+    a {
+      text-decoration: none;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    /* Default link styles */
+    a:link {
+      color: blue;
+      background-color: lightgray;
+      padding: 5px;
+    }
+
+    /* Visited link styles */
+    a:visited {
+      color: purple;
+      background-color: lightyellow;
+    }
+
+    /* Hovered link styles */
+    a:hover {
+      color: white;
+      background-color: red;
+    }
+
+    /* Active link styles */
+    a:active {
+      color: yellow;
+      background-color: green;
+    }
+
+    /* Style for the div elements */
+    .box {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- First a element -->
+  <a href="#" onclick="changeDiv1()">Click to Change Div 1</a>
+  <div class="box" id="div1">First Div</div>
+  
+  <br>
+
+  <!-- Second a element -->
+  <a href="#" onclick="changeDiv2()">Click to Change Div 2</a>
+  <div class="box" id="div2">Second Div</div>
+
+  <script>
+    // Function to change styles of the first div element
+    function changeDiv1() {
+      var div1 = document.getElementById('div1');
+      div1.style.backgroundColor = 'orange';
+      div1.style.color = 'white';
+    }
+
+    // Function to change styles of the second div element
+    function changeDiv2() {
+      var div2 = document.getElementById('div2');
+      div2.style.border = 'dotted 10px green';
+    }
+  </script>
+
+</body>
+</html>
